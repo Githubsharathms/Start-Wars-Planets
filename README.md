@@ -1,3 +1,36 @@
+# Project Description
+
+Star Wars Planets Directory
+Welcome to the Star Wars Planets Directory! Explore the universe of Star Wars with this interactive web application. Go into the details of each planet, from its climate, population and residents. 
+
+# Features:
+
+1. Planets Information:
+   Discover information about each planet, including its name, climate, population, and terrain.
+
+2. Residents Display:
+   Explore about the inhabitants of each planet with detailed information about their name, height, mass, and gender.
+
+3. Pagination Mechanism:
+   Easily navigate through the list of planets with intuitive pagination controls. Explore the entire Star Wars universe at your fingertips!
+
+4. Styling and Responsiveness:
+   Enjoy a visually and responsive user interface designed for seamless interaction across devices and screen sizes.
+
+# Technologies Used:
+
+1. Framework: Developed using React.js for efficient frontend rendering and component-based architecture.
+2. API Integration: Utilized the Star Wars API (SWAPI) to fetch real-time data about planets and residents.
+3. Styling: Enhanced with custom CSS for a polished and visually appealing design.
+
+# Deployment:
+
+Experience the Star Wars Planets Directory live by visiting the live demo!
+
+# Repository:
+
+Access the complete source code on GitHub. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
