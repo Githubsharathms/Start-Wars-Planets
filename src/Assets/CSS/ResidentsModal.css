@@ -1,0 +1,120 @@
+.residents-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.residents-modal {
+  background-color: #262626;
+  color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: auto;
+  max-width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.residents-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: none;
+  color: #f8f8f8;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.resident-card {
+  background-color: #333;
+  color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  flex: 0 0 auto;
+}
+
+.resident-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+}
+
+.resident-details p {
+  margin: 5px 0;
+  color: #f8f8f8;
+}
+
+.residents-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+/* Smartphones (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .residents-modal {
+    padding: 10px;
+    max-width: 95%;
+  }
+
+  .resident-card {
+    padding: 10px;
+  }
+
+  .resident-details p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Low-Resolution Tablets and iPads (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+  .residents-modal {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .resident-card {
+    padding: 15px;
+  }
+
+  .resident-details p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablets iPads portrait mode (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+  .residents-modal {
+    padding: 20px;
+    max-width: 85%;
+  }
+}
+
+/* Desktops (max-width: 1280px) */
+@media only screen and (max-width: 1280px) {
+  .residents-modal {
+    padding: 25px;
+    max-width: 80%;
+  }
+}
+
+/* Huge size screens (min-width: 1281px) */
+@media only screen and (min-width: 1281px) {
+  .residents-modal {
+    padding: 30px;
+    max-width: 75%;
+  }
+}

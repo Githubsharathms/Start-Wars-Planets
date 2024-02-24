@@ -1,0 +1,198 @@
+.planet-card {
+  background-color: #262626;
+  color: #f8f8f8;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* .planet-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3);
+} */
+
+.planet-card h3 {
+  color: #ffe81f;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.planet-card p {
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: left;
+}
+
+/* New styles for form overlay */
+.residents-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; 
+}
+
+.residents-form {
+  background-color: #262626;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  position: relative;
+  max-width: 500px; 
+  width: 100%;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #f8f8f8;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Add animations for form entry and exit */
+.residents-form-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.residents-form-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.residents-form-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.residents-form-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.show-residents-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #262626; 
+  background-color: #ffe81f; 
+  border: none; 
+  border-radius: 20px; 
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.show-residents-btn:hover {
+  background-color: #e6d71e; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.show-residents-btn:active {
+  background-color: #ccbf1d; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.load-more-btn{
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #262626; 
+  background-color: #3273dc;
+  border: none;
+  border-radius: 20px; 
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.load-more-btn:hover {
+  background-color: #2757ba; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.load-more-btn:active {
+  background-color: #1e4596; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+/* Smartphones (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  .planet-card {
+    padding: 15px; 
+    margin: 5px; 
+    font-size: 0.9rem; 
+  }
+
+  .planet-card h3 {
+    font-size: 1.2rem; 
+  }
+}
+
+/* Low-Resolution Tablets and iPads (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+  .planet-card {
+    padding: 18px; 
+  }
+
+  .planet-card h3 {
+    font-size: 1.3rem; 
+  }
+}
+
+/* Tablets iPads portrait mode (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+  .planet-card {
+    padding: 20px;
+  }
+
+  .planet-card h3 {
+    font-size: 1.4rem; 
+  }
+}
+
+/* Desktops (max-width: 1280px) */
+@media only screen and (max-width: 1280px) {
+  .planet-card {
+    padding: 22px; 
+  }
+
+  .planet-card h3 {
+    font-size: 1.5rem; 
+  }
+}
+
+/* Huge size screens (min-width: 1281px) */
+@media only screen and (min-width: 1281px) {
+  .planet-card {
+    padding: 25px; 
+    margin: 15px; 
+  }
+
+  .planet-card h3 {
+    font-size: 1.6rem; 
+  }
+}
