@@ -19,7 +19,9 @@ Welcome to the Star Wars Planets Directory! Explore the universe of Star Wars wi
 # Technologies Used:
 
 1. Framework: Developed using React.js for efficient frontend rendering and component-based architecture.
+   
 2. API Integration: Utilized the Star Wars API (SWAPI) to fetch real-time data about planets and residents.
+   
 3. Styling: Enhanced with custom CSS for a polished and visually appealing design.
 
 # Deployment:
