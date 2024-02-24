@@ -1,6 +1,5 @@
 # Project Description
-
-Star Wars Planets Directory
+# Star Wars Planets Directory
 Welcome to the Star Wars Planets Directory! Explore the universe of Star Wars with this interactive web application. Go into the details of each planet, from its climate, population and residents. 
 
 # Features:
